@@ -1,0 +1,217 @@
+.leftpane{
+-fx-background-color: teal;
+}
+
+.closebtn{
+-fx-background-color: transparent;
+-fx-text-fill: #F4F4F4;
+-fx-cursor: hand;
+}
+
+.rightpane{
+-fx-background-color: #F4F4F4;
+}
+
+.closebtn:hover{
+-fx-background-color: #F30303;
+}
+
+.logoutbtn{
+-fx-background-color: transparent;
+-fx-background-radius: 15px;
+-fx-cursor: hand;
+}
+
+.logoutbtn:hover{
+-fx-background-color: #0B686D;
+}
+
+.maininfopane{
+-fx-background-color: #42362E;
+-fx-background-radius: 0px 50px 50px 0px;
+}
+
+.dashbtn{
+-fx-background-color: transparent;
+-fx-background-radius: 0px 35px 35px 0px;
+}
+
+.dashbtn:hover{
+-fx-background-color: #483C32;
+-fx-cursor: hand;
+}
+
+.shadow{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.15),10.0,0,0,10.0);
+}
+
+.dashboardupper{
+-fx-background-radius:25px;
+-fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.1),10.0,0,0,10.0);
+-fx-background-color: #10969C;
+}
+
+.maindashpane{
+-fx-background-color: #F4F4F4;
+}
+
+.Scroll-Pane > .viewport{
+-fx-background-color: transparent;
+}
+
+.Scroll-Pane{
+-fx-background-color: yellow;
+
+}
+
+.RentACar{
+
+-fx-border-width: 1.5px;
+-fx-border-color: #0F8F95;
+-fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.1),10.0,0,0,10.0);
+}
+
+.table-view {
+
+-fx-background-color: transparent;
+-fx-border-width: 1px;
+-fx-border-color: #10969C;
+-fx-border-radius: 8px;
+
+}
+
+.table-view .column-header-background {
+
+-fx-background-color: linear-gradient( to bottom right , #10969C , #0A5F63);
+
+-fx-background-radius: 8px 8px 0px 8px;
+
+}
+
+
+.addacar{
+    -fx-border-width: 1.5px;
+    -fx-border-color: #42362E;
+    -fx-background-color: #EDF7F6;
+}
+
+.trans{
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #42362E;
+    -fx-background-color: transparent;
+}
+
+.databox{
+    -fx-background-radius: 25px;
+    -fx-background-color: #ffd10e;
+}
+.databox:hover{
+    -fx-border-color: #42362E;
+    -fx-border-radius: 25px;
+    -fx-border-width: 1px;
+}
+
+.textbox{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.details{
+    -fx-background-color: #483C32;
+}
+
+.addbtn{
+    -fx-background-color: #42362E;
+    -fx-background-radius: 25px;
+}
+
+.addbtn:hover{
+    -fx-border-color: #FCCB06;
+    -fx-border-radius: 25px;
+    -fx-border-width: 2px;
+}
+
+.carimg{
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+}
+
+.carCard{
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-background-color: linear-gradient( to bottom right , #D4CDAB , #E7E5DC);
+    /*-fx-background-color: #D4CDAB;*/
+    -fx-max-width: 100%;
+    -fx-max-height: 100%;
+}
+
+.carCard:hover{
+    -fx-cursor: hand;
+    -fx-opacity: 75%;
+}
+
+.Labelsvbox{
+
+}
+
+.databoxpane{
+    -fx-background-radius: 25px;
+    -fx-background-color: linear-gradient( to bottom right , #039595, #10969C);
+}
+
+.databoxpane:hover{
+    -fx-border-color: #42362E;
+    -fx-border-radius: 25px;
+    -fx-border-width: 1px;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #7C0A02;
+    -fx-background-radius: 0;
+}
+.date-picker .arrow-button:hover {
+    -fx-opacity: 85%;
+}
+.date-picker .arrow-button .arrow {
+    -fx-background-color: white;
+}
+.date-picker .cell {
+    -fx-background-color: white;
+}
+
+.date-picker .selected {
+    -fx-background-color: #7C0A02;
+    -fx-text-fill: white;
+}
+.date-picker .selected:focused {
+    -fx-background-color: #7C0A02;
+    -fx-text-fill: white;
+}
+.date-picker-popup  {
+    -fx-border-color: transparent;
+}
+.date-picker-popup .month-year-pane {
+    -fx-background-color: #7C0A02;
+}
+.date-picker-popup .month-year-pane .label {
+    -fx-text-fill: white;
+}
+
+
+.datelabel{
+
+    -fx-background-color: linear-gradient( to bottom right , #42362E, #42362E);
+    -fx-border-radius: 15px 15px 0px 0px;
+    -fx-background-radius: 15px 15px 0px 0px;
+}
+
+.mybtn{
+    -fx-background-color: #42362E;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+}
+
+.mybtn:hover{
+    -fx-border-color: #FCCB06;
+    -fx-border-width: 0.75px;
+}

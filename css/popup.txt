@@ -1,0 +1,78 @@
+.upper{
+    -fx-background-color: linear-gradient( to bottom right , #42362E, #302721);
+}
+
+.btn{
+    -fx-background-color: transparent;
+}
+
+.btn:hover{
+    -fx-background-color: red;
+}
+
+.bottompane{
+    -fx-background-color: #ebfdfd;
+}
+
+.popbtnrent{
+    -fx-background-color: linear-gradient( to bottom right , #32CD32, #46f446);
+}
+
+.popbtnrent:hover{
+    -fx-opacity: 80%;
+    -fx-cursor: hand;
+}
+
+.popbtnclear:hover{
+    -fx-opacity: 80%;
+    -fx-cursor: hand;
+}
+
+
+
+.popbtnclear{
+    -fx-background-color: linear-gradient( to bottom right , #F0C004, #fbd438);
+}
+.underline{
+    -fx-border-color: black;
+    -fx-border-width: 0px 0px 1px 0px;
+}
+
+.text{
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: black;
+}
+
+
+.date-picker .arrow-button {
+    -fx-background-color: #7C0A02;
+    -fx-background-radius: 0;
+}
+.date-picker .arrow-button:hover {
+    -fx-opacity: 85%;
+}
+.date-picker .arrow-button .arrow {
+    -fx-background-color: white;
+}
+.date-picker .cell {
+    -fx-background-color: white;
+}
+
+.date-picker .selected {
+    -fx-background-color: #7C0A02;
+    -fx-text-fill: white;
+}
+.date-picker .selected:focused {
+    -fx-background-color: #7C0A02;
+    -fx-text-fill: white;
+}
+.date-picker-popup  {
+    -fx-border-color: transparent;
+}
+.date-picker-popup .month-year-pane {
+    -fx-background-color: #7C0A02;
+}
+.date-picker-popup .month-year-pane .label {
+    -fx-text-fill: white;
+}

@@ -1,0 +1,162 @@
+.leftpane{
+    -fx-background-color: teal;
+}
+
+.closebtn{
+    -fx-background-color: transparent;
+    -fx-text-fill: #F4F4F4;
+    -fx-cursor: hand;
+}
+
+.rightpane{
+    -fx-background-color: #F4F4F4;
+}
+
+.closebtn:hover{
+    -fx-background-color: #F30303;
+}
+
+.logoutbtn{
+    -fx-background-color: transparent;
+    -fx-background-radius: 15px;
+    -fx-cursor: hand;
+}
+
+.logoutbtn:hover{
+    -fx-background-color: #0B686D;
+}
+
+.maininfopane{
+    -fx-background-color: #42362E;
+    -fx-background-radius: 0px 50px 50px 0px;
+}
+
+.dashbtn{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px 35px 35px 0px;
+}
+
+.dashbtn:hover{
+    -fx-background-color: #483C32;
+    -fx-cursor: hand;
+}
+
+.shadow{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.1),10.0,0,0,10.0);
+}
+
+.dashboardupper{
+    -fx-background-radius:25px;
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.1),10.0,0,0,10.0);
+    -fx-background-color: #10969C;
+}
+
+.maindashpane{
+    -fx-background-color: #F4F4F4;
+}
+
+
+.Scroll-Pane{
+}
+.RentACar{
+
+    -fx-border-width: 1.5px;
+    -fx-border-color: #0F8F95;
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.1),10.0,0,0,10.0);
+}
+
+.table-view {
+
+    -fx-border-width: 1px;
+    -fx-border-color: #10969C;
+    -fx-border-radius: 8px;
+
+}
+
+.lowerdash{
+
+}
+
+.addacar{
+    -fx-border-width: 1.5px;
+    -fx-border-color: #42362E;
+    -fx-background-color: #EDF7F6;
+}
+
+.trans{
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #42362E;
+    -fx-background-color: transparent;
+}
+
+.databox{
+    -fx-background-radius: 25px;
+    -fx-background-color: #ffd10e;
+}
+.databox:hover{
+    -fx-border-color: #42362E;
+    -fx-border-radius: 25px;
+    -fx-border-width: 1px;
+}
+
+.details{
+    -fx-background-color: #42362E;
+}
+
+.addbtn{
+    -fx-background-color: #42362E;
+    -fx-background-radius: 25px;
+}
+
+.addbtn:hover{
+    -fx-border-color: #FCCB06;
+    -fx-border-radius: 25px;
+    -fx-border-width: 2px;
+}
+
+.imguploadbox{
+    -fx-border-color: #42362E;
+    -fx-border-width: 1px;
+    -fx-background-radius: 0px 0px 25px 25px;
+    -fx-border-radius: 0px 0px 25px 25px;
+}
+
+
+.imgbtn{
+    -fx-background-color: #42362E;
+    -fx-background-radius: 25px;
+}
+
+.imgbtn:hover{
+    -fx-border-color: #FCCB06;
+    -fx-border-radius: 25px;
+    -fx-border-width: 2px;
+}
+
+.dashboardcardupper{
+    -fx-background-radius:25px;
+    -fx-border-radius: 25px;
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.3),10.0,0,0,10.0);
+    /* -fx-background-color: linear-gradient( to bottom right , #0F8F95, #16a0a5);*/
+    -fx-background-color: linear-gradient( to bottom right , #10969C, #0b929a);
+    -fx-background-color: #10969C;
+}
+
+.btntrans{
+    -fx-background-color: transparent;
+}
+
+.btntrans:hover{
+    -fx-cursor:hand;
+    -fx-opactity: 85%;
+}
+
+-carreq:hover{
+    -fx-border-width: 1px;
+    -fx-border-color: #42362E;
+    -fx-border-radius: 25px;
+}
+
+.test{
+    -fx-background-color: linear-gradient( to bottom right , #0F8F95, #16a0a5);
+}

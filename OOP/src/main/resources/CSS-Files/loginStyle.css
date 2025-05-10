@@ -1,0 +1,52 @@
+.leftpane{
+-fx-background-color: teal;
+}
+
+.leftpanelabel{
+-fx-foreground-color: #DCEDFF;
+}
+
+.rightpanelabel{
+
+}
+
+.rightpane{
+-fx-background-color: #dcedff;
+}
+
+.textfield{
+-fx-border-radius: 25;
+-fx-background-radius:25;
+-fx-background-color: white;
+}
+
+.textfield:hover{
+-fx-border: 2px 2px 2px 2px;
+-fx-border-color: teal;
+}
+
+.shadow{
+
+}
+
+.close{
+-fx-background-color: transparent;
+-fx-cursor:hand;
+}
+
+.close:hover{
+-fx-background-color: #dd0c0c;
+}
+
+.btn{
+-fx-background-color: teal;
+-fx-background-radius: 12px;
+}
+
+.btn:hover{
+-fx-background-color: #025757;
+}
+
+.mainpane{
+-fx-border: transparent;
+}

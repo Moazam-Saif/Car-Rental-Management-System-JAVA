@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrentalmanagmentsystem.AdminDashboardController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="625.0" prefWidth="1000.0">
+         <children>
+            <BorderPane fx:id="maindashboardPane" prefHeight="625.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane fx:id="UpperTitlePane" prefHeight="25.0" prefWidth="1000.0" style="-fx-background-color: #483C32;" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox layoutX="-62.0" layoutY="-37.0" prefHeight="25.0" prefWidth="380.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="620.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="17.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/CAR2.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="4.0" top="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label prefHeight="25.0" prefWidth="235.0" text="Car Rental Management System" textFill="#f4f4f4">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Button fx:id="mybtn" alignment="CENTER" contentDisplay="CENTER" layoutX="948.0" layoutY="2.0" mnemonicParsing="false" onAction="#close" prefHeight="19.0" prefWidth="52.0" styleClass="closebtn" stylesheets="@../../../CSS-Files/AdminDashboard.css" text="X" textAlignment="CENTER" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="11.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="595.0" prefWidth="230.0" style="-fx-background-color: #119DA4;" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox layoutY="22.0" prefHeight="179.0" prefWidth="237.0" AnchorPane.bottomAnchor="389.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="22.0">
+                           <children>
+                              <AnchorPane fx:id="maininfopane" prefHeight="176.0" prefWidth="237.0" styleClass="maininfopane" stylesheets="@../../../CSS-Files/AdminDashboard.css">
+                                 <children>
+                                    <ImageView fitHeight="89.0" fitWidth="92.0" layoutX="69.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="73.0">
+                                       <image>
+                                          <Image url="@../../../Images/duser.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="85.0" layoutY="98.0" prefWidth="152.0" text="Welcome !" textFill="#f4f4f4">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="107.0" prefHeight="17.0" prefWidth="229.0" text="MyAdmin" textAlignment="CENTER" textFill="#f4f4f4" AnchorPane.topAnchor="111.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                        <HBox layoutX="-1.0" layoutY="563.0" onMouseClicked="#close" prefHeight="33.0" prefWidth="231.0" stylesheets="@../../../CSS-Files/AdminDashboard.css">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#logout" prefHeight="24.0" prefWidth="231.0" styleClass="logoutbtn" stylesheets="@../../../CSS-Files/AdminDashboard.css" text="Log Out" textFill="#483c32">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Images/arrowleftt.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Line endX="100.0" layoutX="115.0" layoutY="563.0" startX="-100.0" />
+                        <VBox layoutY="257.0" prefHeight="278.0" prefWidth="236.0">
+                           <children>
+                              <Button fx:id="Homebtn" graphicTextGap="0.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#Home" prefHeight="39.0" prefWidth="236.0" styleClass="dashbtn" stylesheets="@../../../CSS-Files/AdminDashboard.css" text="Home" textFill="#f4f4f4">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="33.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Images/pplus.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="AddaCarbtn" graphicTextGap="0.0" mnemonicParsing="false" onAction="#AddaCar" onDragDetected="#AddaCar" prefHeight="39.0" prefWidth="236.0" styleClass="dashbtn" stylesheets="@../../../CSS-Files/AdminDashboard.css" text="Add a Car" textFill="#f4f4f4">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="33.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Images/pplus.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="DeleteACarbtn" graphicTextGap="0.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#DeleteACar" onDragDetected="#DeleteACar" prefHeight="39.0" prefWidth="236.0" styleClass="dashbtn" stylesheets="@../../../CSS-Files/AdminDashboard.css" text="Delete A Car" textFill="#f4f4f4">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="33.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Images/pplus.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="GenerateReportsbtn" graphicTextGap="0.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#GenerateReports" onDragDetected="#GenerateReports" prefHeight="39.0" prefWidth="236.0" styleClass="dashbtn" stylesheets="@../../../CSS-Files/AdminDashboard.css" text="Reports" textFill="#f4f4f4">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="22.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="33.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Images/pplus.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <Line endX="100.0" layoutX="118.0" layoutY="223.0" startX="-100.0" />
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="maindashpane" stylesheets="@../../../CSS-Files/AdminDashboard.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox layoutX="83.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="115.0" prefWidth="733.0" styleClass="dashboardupper" stylesheets="@../../../CSS-Files/AdminDashboard.css" AnchorPane.bottomAnchor="470.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+                        <HBox fx:id="SceneChangeHBox" alignment="CENTER" layoutX="46.0" layoutY="161.0" prefHeight="411.0" prefWidth="733.0" styleClass="lowerdash" stylesheets="@../../../CSS-Files/AdminDashboard.css" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="161.0">
+                           <children>
+                              <StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="411.0" prefWidth="1019.0" stylesheets="@../../../CSS-Files/AdminDashboard.css">
+                                 <children>
+                                    <AnchorPane fx:id="HomePane" prefHeight="293.0" prefWidth="559.0" styleClass="addacar" stylesheets="@../../../CSS-Files/AdminDashboard.css" visible="false">
+                                       <children>
+                                          <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="735.0" styleClass="details" AnchorPane.bottomAnchor="346.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label text="Home" textFill="#fccb06">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="49.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <AnchorPane layoutX="42.0" layoutY="112.0" prefHeight="282.0" prefWidth="411.0" styleClass="shadow" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="117.0">
+                                             <children>
+                                                <BarChart fx:id="IncomeChart" layoutX="-44.0" layoutY="-59.0" prefHeight="341.0" prefWidth="456.0" title="Income Chart" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <xAxis>
+                                                    <CategoryAxis side="BOTTOM" />
+                                                  </xAxis>
+                                                  <yAxis>
+                                                    <NumberAxis side="LEFT" />
+                                                  </yAxis>
+                                                </BarChart>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="472.0" layoutY="117.0" prefHeight="282.0" prefWidth="242.0" styleClass="shadow" stylesheets="@../../../CSS-Files/AdminDashboard.css" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="472.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="117.0">
+                                             <children>
+                                                <LineChart fx:id="CustomersChart" layoutX="-129.0" layoutY="-59.0" prefHeight="341.0" prefWidth="371.0" title="Customers" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <xAxis>
+                                                    <CategoryAxis side="BOTTOM" />
+                                                  </xAxis>
+                                                  <yAxis>
+                                                    <NumberAxis side="LEFT" />
+                                                  </yAxis>
+                                                </LineChart>
+                                             </children>
+                                          </AnchorPane>
+                                       </children></AnchorPane>
+                                    <AnchorPane fx:id="AddaCarPane" layoutX="10.0" layoutY="10.0" prefHeight="293.0" prefWidth="559.0" styleClass="addacar" stylesheets="@../../../CSS-Files/AdminDashboard.css" visible="false">
+                                       <children>
+                                          <HBox alignment="CENTER" layoutX="57.0" layoutY="251.0" prefHeight="38.0" prefWidth="275.0" styleClass="databox" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="310.0">
+                                             <children>
+                                                <Label prefHeight="33.0" prefWidth="80.0" text="Price:" textFill="#42362e">
+                                                   <font>
+                                                      <Font name="Malgun Gothic Bold" size="23.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="PriceField" minHeight="-Infinity" minWidth="-Infinity" onAction="#Add" prefHeight="25.0" prefWidth="157.0" styleClass="trans">
+                                                   <HBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER" layoutX="344.0" layoutY="237.0" prefHeight="38.0" prefWidth="275.0" styleClass="databox" stylesheets="@../../../CSS-Files/AdminDashboard.css" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="190.0">
+                                             <children>
+                                                <Label prefHeight="33.0" prefWidth="80.0" text="Brand:" textFill="#42362e">
+                                                   <font>
+                                                      <Font name="Malgun Gothic Bold" size="23.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="BrandField" minHeight="-Infinity" minWidth="-Infinity" onAction="#Add" prefHeight="25.0" prefWidth="157.0" styleClass="trans">
+                                                   <HBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER" layoutX="67.0" layoutY="235.0" prefHeight="38.0" prefWidth="275.0" styleClass="databox" stylesheets="@../../../CSS-Files/AdminDashboard.css" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="130.0">
+                                             <children>
+                                                <Label prefHeight="33.0" prefWidth="80.0" text="Car-ID:" textFill="#42362e">
+                                                   <font>
+                                                      <Font name="Malgun Gothic Bold" size="23.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="CarIDField" minHeight="-Infinity" minWidth="-Infinity" onAction="#Add" prefHeight="25.0" prefWidth="157.0" styleClass="trans">
+                                                   <HBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER" layoutX="57.0" layoutY="306.0" prefHeight="38.0" prefWidth="275.0" styleClass="databox" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="250.0">
+                                             <children>
+                                                <Label prefHeight="33.0" prefWidth="80.0" text="Model:" textFill="#42362e">
+                                                   <font>
+                                                      <Font name="Malgun Gothic Bold" size="23.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="ModelField" minHeight="-Infinity" minWidth="-Infinity" onAction="#Add" prefHeight="25.0" prefWidth="157.0" styleClass="trans">
+                                                   <HBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                          <Line endX="620.0" layoutX="105.0" layoutY="79.0" startX="-100.0" stroke="#0f8f95" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+                                          <HBox alignment="CENTER" layoutX="6.0" layoutY="9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="693.0" styleClass="details" AnchorPane.bottomAnchor="338.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label text="Add A Car" textFill="#fccb06">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="49.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <VBox layoutX="468.0" layoutY="126.0" prefHeight="171.0" prefWidth="118.0" styleClass="imguploadbox">
+                                             <children>
+                                                <ImageView fx:id="uploadimageview" fitHeight="138.0" fitWidth="117.0" pickOnBounds="true" />
+                                                <Button fx:id="UploadimageBtn" mnemonicParsing="false" onAction="#UploadImage" prefHeight="53.0" prefWidth="200.0" styleClass="imgbtn" text="Upload Image" textFill="#fccb06" />
+                                             </children>
+                                          </VBox>
+                                          <Button fx:id="Addbth" layoutX="320.0" layoutY="376.0" mnemonicParsing="false" onAction="#Add" prefHeight="30.0" prefWidth="100.0" styleClass="addbtn" text="ADD" textFill="#fccb06">
+                                             <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane fx:id="DeleteACarPane" layoutX="10.0" layoutY="10.0" prefHeight="293.0" prefWidth="559.0" styleClass="addacar" stylesheets="@../../../CSS-Files/AdminDashboard.css">
+                                       <children>
+                                          <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="735.0" styleClass="details" AnchorPane.bottomAnchor="345.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label text="Delete A Car" textFill="#fccb06">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="49.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <TableView fx:id="DeleteCarTable" layoutX="37.0" layoutY="105.0" prefHeight="262.0" prefWidth="685.0" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="100.0">
+                                             <columns>
+                                                <TableColumn fx:id="CarIDColumn" editable="false" prefWidth="132.0" sortable="false" text="Car ID" />
+                                                <TableColumn fx:id="BrandColumn" editable="false" prefWidth="139.0" sortable="false" text="Brand" />
+                                                <TableColumn fx:id="ModelColumn" prefWidth="144.0" style="-fx-background-color: #10969C;" text="Model" />
+                                                <TableColumn fx:id="PriceColumn" prefWidth="148.0" style="-fx-background-color: #10969C;" text="Price" />
+                                                <TableColumn fx:id="StatusColumn" prefWidth="135.0" style="-fx-background-color: #10969C;" text="Status" />
+                                             </columns>
+                                          </TableView>
+                                          <Button fx:id="DeleteBtn" layoutX="302.0" layoutY="382.0" mnemonicParsing="false" onAction="#Delete" prefHeight="24.0" prefWidth="132.0" styleClass="addbtn" stylesheets="@../../../CSS-Files/AdminDashboard.css" text="Delete" textFill="#fccb06" AnchorPane.topAnchor="382.0">
+                                             <font>
+                                                <Font name="Bauhaus 93" size="18.0" />
+                                             </font>
+                                          </Button>
+                                       </children></AnchorPane>
+                                    <AnchorPane fx:id="ReportsPane" layoutX="10.0" layoutY="10.0" prefHeight="293.0" prefWidth="559.0" styleClass="addacar" stylesheets="@../../../CSS-Files/AdminDashboard.css" visible="false">
+                                       <children>
+                                          <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="735.0" styleClass="details" AnchorPane.bottomAnchor="344.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label text="Generate Reports" textFill="#fccb06">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="49.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                       </children></AnchorPane>
+                                 </children></StackPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

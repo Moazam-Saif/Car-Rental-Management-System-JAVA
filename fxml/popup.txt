@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrentalmanagmentsystem.popupController">
+   <children>
+      <AnchorPane prefHeight="60.0" prefWidth="400.0" styleClass="upper" stylesheets="@../../../CSS-Files/popup.css" AnchorPane.bottomAnchor="340.0">
+         <children>
+            <Label layoutX="107.0" layoutY="10.0" text="Selected Car" textFill="#f8f1d0">
+               <font>
+                  <Font name="Berlin Sans FB" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="400.0" styleClass="bottompane" stylesheets="@../../../CSS-Files/popup.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="36.0" layoutY="205.0" prefHeight="60.0" prefWidth="166.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="195.0">
+               <children>
+                  <Label text="Returning Date:">
+                     <font>
+                        <Font name="Comic Sans MS" size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="3.0" />
+                     </VBox.margin>
+                  </Label>
+                  <DatePicker fx:id="ReturningDatePicker" editable="false" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="26.0" layoutY="195.0" prefHeight="60.0" prefWidth="166.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="195.0">
+               <children>
+                  <Label text="Renting Date:">
+                     <font>
+                        <Font name="Comic Sans MS" size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="3.0" />
+                     </VBox.margin>
+                  </Label>
+                  <DatePicker fx:id="RentingDatePicker" disable="true" editable="false">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </DatePicker>
+               </children>
+            </VBox>
+            <HBox layoutY="24.0" prefHeight="37.0" prefWidth="400.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="25.0">
+               <children>
+                  <Label text="Car:">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="23.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="CarNameppLabel" layoutX="10.0" layoutY="10.0" prefHeight="33.0" prefWidth="261.0" styleClass="underline" text="My Car">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="36.0" right="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+               </children></HBox>
+            <Button layoutX="133.0" layoutY="283.0" mnemonicParsing="false" onAction="#popupClear" prefHeight="41.0" prefWidth="134.0" styleClass="popbtnclear" text="Clear" textFill="#000507" AnchorPane.rightAnchor="50.0">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="133.0" layoutY="283.0" mnemonicParsing="false" onAction="#FinallyRent" prefHeight="41.0" prefWidth="134.0" styleClass="popbtnrent" text="Rent" textFill="#000507" AnchorPane.leftAnchor="50.0">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <HBox layoutX="10.0" layoutY="34.0" prefHeight="37.0" prefWidth="400.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
+               <children>
+                  <Label text="Price:">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="23.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="CarPriceppLabel" layoutX="10.0" layoutY="10.0" prefHeight="33.0" prefWidth="262.0" styleClass="underline" text="Car Price">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="19.0" right="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutY="97.0" prefHeight="37.0" prefWidth="400.0" AnchorPane.topAnchor="125.0">
+               <children>
+                  <Label text="Name:">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="23.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="SelectedCarUsername" alignment="TOP_LEFT" onAction="#FinallyRent" prefHeight="6.0" prefWidth="266.0" promptText="Your username here" styleClass="text">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
